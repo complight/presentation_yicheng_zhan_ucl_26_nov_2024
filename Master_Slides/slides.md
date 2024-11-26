@@ -217,12 +217,9 @@ $\lambda_p$ denotes the wavelength of the active primary $p$.
 </style>
 
 <!--
-The problem we faced in this project was the need for real-time generation of multi-color holograms, without the need for heavy computational resources. Compared with the traditional single color hologram, Multicolor hologram is an emerging hologram type.
+The problem we faced in this project was the need for real-time generation of multi-color holograms. Compared with the traditional single color hologram, Multicolor hologram is an emerging hologram type.
 Single-color holograms use a time-sequential approach. 
 On the other hand, Multi-color holograms simultaneously use multiple color primaries, modulating all colors at once. which offers Improved brightness levels, and enhanced color reproduction.
-
-Here in our 2-D multicolour optimisation we define an extra variable in our optimisation function l(p,t)
-Which represents the peak brightness of a specific color primary at a specific subframe, typically holographic display has three colour primaries and three sub frames.
 
 Naively, when we pile up multiple colour primaries in the traditional 2D hologram it will create a visual artifacts.
 You can also boost the brightness level by using more power of the laser but it may hurt your eyes.
@@ -230,12 +227,10 @@ In comparison. Multicolour hologram does not have such a visual artifacts and in
 
 However optimising 3×3 equals to 9 extra variables requires precise control over multiple light sources and time consuming. 
 
-
 This is where my research on autocolor goes in. 
 Instead of using randomly initialised laser power as the starting point of optimisation we use NN predicted laser power to replace it.
 This allows for much faster generation of high-quality, multi-color holograms.
 To train such a network we created the first 3-D multicolour hologram dataet using large language model, stable diffusion and death estimation network.
-
 -->
 
 ---
@@ -347,15 +342,12 @@ Conventional Light Transport
 </p>
 
 <!--
-The problem we are dealing with is the simulation of light transport in holography, 
+in the second project, we are addressing the simulation of light transport in holography, 
 Conventionally, we propagate a given Hologram to multiple different depth planes step by step 
-to generate the reconstructions of it.
+to generate the reconstructions of it. This is typically how things are calculated in holographic display, 
 
 There are many existing works in the literature that help to improve the accuracy of the propagation simulation.
-This is typically how things are calculated in holographic display, put a SLM on the right,
-there is emerging trend in computer graphics to use this method for holographic displays to improve the physical accuracy in traditional rendering pipeline.
 -->
-
 
 ---
 transition: fade-out
@@ -419,6 +411,14 @@ Focal Surface Light Transport
 </div>
 
 
+
+<p class="citation" style="font-size: 7px; position: absolute; right: 166px; bottom: -10px; z-index: 10;">
+  (2) "<a rel="noopener noreferrer" href="https://kaanaksit.com/assets/pdf/ZhengEtAl_SigAsia2024_Focal_surface_holographic_light_transport_using_learned_spatially_adaptive_convolutions.pdf" target="_blank">
+  Zheng, C., Zhan, Y., Shi, L., Cakmakci, O., & Akşit, K. Focal Surface Holographic Light Transport using Learned Spatially Adaptive Convolutions.
+  </a>" <i>SIGGRAPH ASIA 2024 Tech Comm</i>
+</p>
+
+
 <!--
 We propose focal surface light transport,
 instead of having individual depth planes,
@@ -427,12 +427,6 @@ we train a neural network that takes focal surface and the hologram as the input
 
 So in this case, we can achieve simulating light propagation in multiple planes using only 1 step.
 -->
-
-<p class="citation" style="font-size: 7px; position: absolute; right: 166px; bottom: -10px; z-index: 10;">
-  (2) "<a rel="noopener noreferrer" href="https://kaanaksit.com/assets/pdf/ZhengEtAl_SigAsia2024_Focal_surface_holographic_light_transport_using_learned_spatially_adaptive_convolutions.pdf" target="_blank">
-  Zheng, C., Zhan, Y., Shi, L., Cakmakci, O., & Akşit, K. Focal Surface Holographic Light Transport using Learned Spatially Adaptive Convolutions.
-  </a>" <i>SIGGRAPH ASIA 2024 Tech Comm</i>
-</p>
 
 
 ---
