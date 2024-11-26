@@ -6,6 +6,8 @@ theme: academic
 # background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Advanced Algorithmic Methods for Next-Generation Computational Displays
+favicon: /complightlab.png
+titleTemplate: '%s - Computational Light Laboratory'
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
