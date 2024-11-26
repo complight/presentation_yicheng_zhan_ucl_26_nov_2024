@@ -45,7 +45,7 @@ University College London
 </div>
 
 <div class="abs-br left-50px top-430px">
-<img src="/images/complight.png" style="max-height: 80px; max-width: 80px;">
+<img src="/complight.png" style="max-height: 80px; max-width: 80px;">
 </div>
 
 <div class="abs-br left-130px top-435px" style="width:200px">
@@ -59,32 +59,32 @@ Computational Light Laboratory
 
 <div class="absolute right-275px bottom-20px">
 <a href="">
-<img src="/images/teaser.png" style="max-height: 200px; max-width: 200px;">
+<img src="/teaser.png" style="max-height: 200px; max-width: 200px;">
 </a>
 </div>
 
 <div class="absolute right-25px bottom-20px">
 <a href="">
-<img src="/images/autocolor.png" style="max-height: 200px; max-width: 200px;">
+<img src="/autocolor.png" style="max-height: 200px; max-width: 200px;">
 </a>
 </div>
 
 
 <div class="abs-br right-70px top-45px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/focal_stack_3D_side.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Focal_Stack/focal_stack_3D_side.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 
 <div class="abs-br right-180px top-125px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/curve_arrow.png" style="max-height: 100px; max-width: 100px;">
+      <img src="/projects/Focal_Stack/curve_arrow.png" style="max-height: 100px; max-width: 100px;">
   </div>
 </div>
 
 <div class="abs-br right-180px top-200px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/hologram_side.png" style="max-height: 130px; max-width: 130px;">
+      <img src="/projects/Focal_Stack/hologram_side.png" style="max-height: 130px; max-width: 130px;">
   </div>
 </div>
 
@@ -162,7 +162,7 @@ $\lambda_p$ denotes the wavelength of the active primary $p$.
 <span style="color: #ff1212">→</span>
 </div>
   <div class="relative inline-block">
-      <img src="/images/projects/AutoColor/Conventional_flower.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/AutoColor/Conventional_flower.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 </div>
@@ -180,7 +180,7 @@ $\lambda_p$ denotes the wavelength of the active primary $p$.
 <span style="color: #3cff19">→</span>
 </div>
   <div class="relative inline-block">
-      <img src="/images/projects/Autocolor/Multicolor_flower.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Autocolor/Multicolor_flower.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 </div>
@@ -241,7 +241,7 @@ transition: fade-out
 
 <div class="abs-br left-58px top-80px">
   <div class="relative inline-block">
-      <img src="/images/projects/Autocolor/result.png" style="background-color: white; max-height: 570px; max-width: 570px;">
+      <img src="/projects/Autocolor/result.png" style="background-color: white; max-height: 570px; max-width: 570px;">
   </div>
 </div>
 
@@ -272,7 +272,7 @@ Conventional Light Transport
 
 <div class="abs-br left-80px top-155px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/depth_plane_transparent.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Focal_Stack/depth_plane_transparent.png" style="max-height: 200px; max-width: 200px;">
   </div>
   <div class="abs-br left--10px top-235px">Depth Plane</div>
 </div>
@@ -282,7 +282,7 @@ Conventional Light Transport
 
 <div v-click="1" class="abs-br left-320px top-175px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/focal_stack_side.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Focal_Stack/focal_stack_side.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 
@@ -294,13 +294,13 @@ Conventional Light Transport
 
 <div v-click="2" class="abs-br left-320px top-195px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/arrow_n_steps.png" style="max-height: 220px; max-width: 220px;">
+      <img src="/projects/Focal_Stack/arrow_n_steps.png" style="max-height: 220px; max-width: 220px;">
   </div>
 </div>
 
 <div v-click="2" class="abs-br left-280px top-355px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/hologram_side.png" style="max-height: 100px; max-width: 100px;">
+      <img src="/projects/Focal_Stack/hologram_side.png" style="max-height: 100px; max-width: 100px;">
   </div>
 </div>
 
@@ -308,7 +308,7 @@ Conventional Light Transport
 
 <div v-click="3" class="abs-br right-250px top-175px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/depth_plane_side.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Focal_Stack/depth_plane_side.png" style="max-height: 200px; max-width: 200px;">
   </div>
   <div class="abs-br left--10px top-215px">Reconstruction</div>
 </div>
@@ -317,7 +317,7 @@ Conventional Light Transport
 
 <div v-click="4" class="abs-br right-70px top-195px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/hardware.png" style="max-height: 180px; max-width: 180px;">
+      <img src="/projects/Focal_Stack/hardware.png" style="max-height: 180px; max-width: 180px;">
   </div>
   <div class="abs-br left--10px top-195px">Holographic Display</div>
 </div>
@@ -359,7 +359,7 @@ Focal Surface Light Transport
 
 <div class="abs-br left-40px top-155px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/depth_plane_transparent.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Focal_Stack/depth_plane_transparent.png" style="max-height: 200px; max-width: 200px;">
   </div>
   <div class="abs-br left--10px top-235px">Depth Plane</div>
 </div>
@@ -369,7 +369,7 @@ Focal Surface Light Transport
 
 <div v-click="1" class="abs-br left-270px top-175px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/focal_stack_3D_side_grey.png" style="max-height: 170px; max-width: 170px;">
+      <img src="/projects/Focal_Stack/focal_stack_3D_side_grey.png" style="max-height: 170px; max-width: 170px;">
   </div>
    <div class="abs-br left-10px top-215px">Focal Surface</div>
 </div>
@@ -378,19 +378,19 @@ Focal Surface Light Transport
 
 <div v-click="2" class="abs-br right-300px top-195px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/focal_stack_3D_side.png" style="max-height: 170px; max-width: 170px;">
+      <img src="/projects/Focal_Stack/focal_stack_3D_side.png" style="max-height: 170px; max-width: 170px;">
   </div>
 </div>
 
 <div v-click="2" class="abs-br right-410px top-295px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/curve_arrow.png" style="max-height: 70px; max-width: 70px;">
+      <img src="/projects/Focal_Stack/curve_arrow.png" style="max-height: 70px; max-width: 70px;">
   </div>
 </div>
 
 <div v-click="2" class="abs-br right-400px top-345px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/hologram_side.png" style="max-height: 100px; max-width: 100px;">
+      <img src="/projects/Focal_Stack/hologram_side.png" style="max-height: 100px; max-width: 100px;">
   </div>
 </div>
 
@@ -405,7 +405,7 @@ Focal Surface Light Transport
 
 <div v-click="3" class="abs-br right-80px top-175px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/depth_plane_side.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Focal_Stack/depth_plane_side.png" style="max-height: 200px; max-width: 200px;">
   </div>
   <div class="abs-br left--10px top-215px">Reconstruction</div>
 </div>
@@ -443,7 +443,7 @@ transition: fade-out
   }">
     <div class="abs-br left-58px top-140px project-container">
       <div class="relative inline-block">
-        <img src="/images/projects/Focal_Stack/network.png" style="background-color: white; max-height: 870px; max-width: 870px;">
+        <img src="/projects/Focal_Stack/network.png" style="background-color: white; max-height: 870px; max-width: 870px;">
       </div> 
     </div>
   </div>
@@ -455,12 +455,12 @@ transition: fade-out
   }">
     <div class="abs-br left-272px top-182px project-container"  style="z-index: 10;">
       <div class="relative inline-block">
-        <img src="/images/projects/Focal_Stack/SV_gen.png" style="background-color: white; max-height: 130px; max-width: 130px;">
+        <img src="/projects/Focal_Stack/SV_gen.png" style="background-color: white; max-height: 130px; max-width: 130px;">
       </div> 
     </div>
   <div class="abs-br left-59px top-263px project-container">
       <div class="relative inline-block">
-        <img src="/images/projects/Focal_Stack/SV.png" style="background-color: white; max-height: 370px; max-width: 370px;">
+        <img src="/projects/Focal_Stack/SV.png" style="background-color: white; max-height: 370px; max-width: 370px;">
       </div> 
     </div>
     <div class="absolute left-105px bottom-75px text-center project-container" style="background-color: #e5eef6ff; max-height: 300px; max-width: 330px; padding: 2px 5px; z-index: 4;">
@@ -479,12 +479,12 @@ transition: fade-out
   
   <div class="abs-br right-372px top-184px project-container"  style="z-index: 10;">
     <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/SAM_small.png" style="background-color: white; max-height: 47px; max-width: 47px;">
+      <img src="/projects/Focal_Stack/SAM_small.png" style="background-color: white; max-height: 47px; max-width: 47px;">
     </div> 
   </div>
     <div class="abs-br right-203px top-264px project-container">
       <div class="relative inline-block">
-        <img src="/images/projects/Focal_Stack/SAM.png" style="background-color: white; max-height: 349px; max-width: 349px;">
+        <img src="/projects/Focal_Stack/SAM.png" style="background-color: white; max-height: 349px; max-width: 349px;">
       </div> 
     </div>
     <div class="absolute left-445px bottom-75px text-center project-container" style="background-color: #edf3eaff; max-height: 300px; max-width: 330px; padding: 2px 5px; z-index: 4;">
@@ -549,7 +549,7 @@ transition: fade-out
 
 <div class="abs-br right-22px top-90px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/compare.png" style="background-color: white; max-height: 900px; max-width: 900px;">
+      <img src="/projects/Focal_Stack/compare.png" style="background-color: white; max-height: 900px; max-width: 900px;">
   </div>
 </div>
 
@@ -562,7 +562,7 @@ transition: fade-out
 
 <div class="abs-br left-58px top-325px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/opt_speed.png" style="background-color: white; max-height: 400px; max-width: 400px;">
+      <img src="/projects/Focal_Stack/opt_speed.png" style="background-color: white; max-height: 400px; max-width: 400px;">
   </div>
 </div>
 
@@ -582,7 +582,7 @@ transition: fade-out
 
 <div class="abs-br right-21px top-325px">
   <div class="relative inline-block">
-      <img src="/images/projects/Focal_Stack/prop_speed.png" style="background-color: white; max-height: 423px; max-width: 423px;">
+      <img src="/projects/Focal_Stack/prop_speed.png" style="background-color: white; max-height: 423px; max-width: 423px;">
   </div>
 </div>
 <div class="absolute right-49px top-470px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 400px; padding: 2px 5px;">
@@ -632,7 +632,7 @@ const playbackRate = ref(0.7)
 <div class="absolute right-45px top-125px text-center">
   <div style="max-height: 900px; max-width: 900px;">
     <SlidevVideo  autoplay autoreset :playbackRate="playbackRate" loop>
-      <source src="/images/projects/Focal_Stack/changing_depth.mov" type="video/mp4" />
+      <source src="/projects/Focal_Stack/changing_depth.mov" type="video/mp4" />
     </SlidevVideo>
   </div>
 </div>
@@ -705,7 +705,6 @@ const playbackRate = ref(0.7)
   </a>" <i>SIGGRAPH ASIA 2024 Tech Comm</i>
 </p>
 
-
 <!--
 Here, we present a close-up reconstruction comparison 
 between our method and the ASM method under varying depth planes. 
@@ -732,7 +731,7 @@ const playbackRate = ref(0.7)
 <div class="absolute right-15px top-125px text-center">
   <div style="max-height: 950px; max-width: 950px;">
     <SlidevVideo  autoplay autoreset :playbackRate="playbackRate" loop>
-      <source src="/images/projects/Focal_Stack/focal_surface_result.mov" type="video/mp4" />
+      <source src="/projects/Focal_Stack/focal_surface_result.mov" type="video/mp4" />
     </SlidevVideo>
   </div>
 </div>
@@ -877,7 +876,7 @@ become part of the input to the learned method.
 <span style="color: #ff1212">→</span>
 </div>
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/Configurable_Holo.png" style="max-height: 390px; max-width: 390px;">
+      <img src="/projects/Configurable_holo/Configurable_Holo.png" style="max-height: 390px; max-width: 390px;">
   </div>
 </div>
 </div>
@@ -948,7 +947,7 @@ transition: fade-out
 <div class="abs-br left-166px top-118px" style="z-index: 1;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block" >
-      <img src="/images/projects/Configurable_holo/demo/SLMs.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Configurable_holo/demo/SLMs.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 </div>
@@ -958,7 +957,7 @@ transition: fade-out
 <div class="abs-br left--30px top-105px" style="z-index: 1;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/red_NN.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Configurable_holo/demo/red_NN.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 </div>
@@ -975,7 +974,7 @@ transition: fade-out
 <div class="abs-br right-60px top-105px" style="z-index: 1;">
 <div class="abs-br right-50px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/results_single.png" style="max-height: 450px; max-width: 450px;">
+      <img src="/projects/Configurable_holo/demo/results_single.png" style="max-height: 450px; max-width: 450px;">
   </div>
 </div>
 </div>
@@ -985,7 +984,7 @@ transition: fade-out
 <div class="abs-br left-83px top-191px" style="z-index: 2;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/red_NN2.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Configurable_holo/demo/red_NN2.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 </div>
@@ -996,7 +995,7 @@ transition: fade-out
 <div class="abs-br left-200px top-175px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
+      <img src="/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
   </div>
 </div>
 </div>
@@ -1007,7 +1006,7 @@ transition: fade-out
 <div class="abs-br left-200px top-250px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
+      <img src="/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
   </div>
 </div>
 </div>
@@ -1018,7 +1017,7 @@ transition: fade-out
 <div class="abs-br left-200px top-325px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
+      <img src="/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
   </div>
 </div>
 </div>
@@ -1060,7 +1059,8 @@ if I want to train a network that can adapt to display one, no problem, they usu
 but if you want to let it adapt to display 2,  the current model can not do that, you have to train another model for display two and then that’s also true for display 3 and 4 
 the more displays you have, the more models you need to trainand. these networks will give you holograms individually so one model can only adapt to one configuration.
 
-the state of art CGH network supports smaller than 10 FPS for full HD resolution. They’re slow and then they require that depth as the input.
+the state of art CGH network supports smaller than 10 FPS for full HD resolution. 
+They’re slow and then they require that depth as the input.
 -->
 
 ---
@@ -1102,7 +1102,7 @@ transition: fade-out
 <div class="abs-br left-166px top-118px" style="z-index: 1;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block" >
-      <img src="/images/projects/Configurable_holo/demo/SLMs.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/Configurable_holo/demo/SLMs.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 </div>
@@ -1112,7 +1112,7 @@ transition: fade-out
 <div class="abs-br left--30px top-105px" style="z-index: 1;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/green_NN.png" style="max-height: 280px; max-width: 280px;">
+      <img src="/projects/Configurable_holo/demo/green_NN.png" style="max-height: 280px; max-width: 280px;">
   </div>
 </div>
 </div>
@@ -1129,7 +1129,7 @@ transition: fade-out
 <div class="abs-br right-60px top-105px" style="z-index: 1;">
 <div class="abs-br right-50px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/results_ours.png" style="max-height: 450px; max-width: 450px;">
+      <img src="/projects/Configurable_holo/demo/results_ours.png" style="max-height: 450px; max-width: 450px;">
   </div>
 </div>
 </div>
@@ -1141,7 +1141,7 @@ transition: fade-out
 <div class="abs-br left-200px top-180px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
+      <img src="/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
   </div>
 </div>
 </div>
@@ -1152,7 +1152,7 @@ transition: fade-out
 <div class="abs-br left-200px top-265px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
+      <img src="/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
   </div>
 </div>
 </div>
@@ -1163,7 +1163,7 @@ transition: fade-out
 <div class="abs-br left-200px top-333px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
-      <img src="/images/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
+      <img src="/projects/Configurable_holo/demo/arrow.png" style="max-height: 50px; max-width: 50px;">
   </div>
 </div>
 </div>
@@ -1220,7 +1220,7 @@ const playbackRate = ref(0.7)
 <div v-click="1">
   <div style="max-height: 320px; max-width: 320px;">
     <SlidevVideo v-click="1" autoplay autoreset :playbackRate="playbackRate" loop>
-      <source src="/images/projects/Configurable_holo/test.mp4" type="video/mp4" />
+      <source src="/projects/Configurable_holo/test.mp4" type="video/mp4" />
     </SlidevVideo>
   </div>
 
@@ -1235,7 +1235,7 @@ const playbackRate = ref(0.7)
   <div class="absolute right-105px top-95px text-center">
     <div style="max-height: 320px; max-width: 320px;">
       <SlidevVideo v-click="2" autoplay autoreset :playbackRate="playbackRate" loop>
-        <source src="/images/projects/Configurable_holo/test2.mp4" type="video/mp4" />
+        <source src="/projects/Configurable_holo/test2.mp4" type="video/mp4" />
       </SlidevVideo>
     </div>
   </div>
