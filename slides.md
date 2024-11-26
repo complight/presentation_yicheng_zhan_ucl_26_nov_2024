@@ -180,7 +180,7 @@ $\lambda_p$ denotes the wavelength of the active primary $p$.
 <span style="color: #3cff19">→</span>
 </div>
   <div class="relative inline-block">
-      <img src="/projects/Autocolor/Multicolor_flower.png" style="max-height: 200px; max-width: 200px;">
+      <img src="/projects/AutoColor/Multicolor_flower.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 </div>
@@ -241,7 +241,7 @@ transition: fade-out
 
 <div class="abs-br left-58px top-80px">
   <div class="relative inline-block">
-      <img src="/projects/Autocolor/result.png" style="background-color: white; max-height: 570px; max-width: 570px;">
+      <img src="/projects/AutoColor/result.png" style="background-color: white; max-height: 570px; max-width: 570px;">
   </div>
 </div>
 
