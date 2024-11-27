@@ -107,12 +107,7 @@ layout: two-cols
 # AutoColor
 
 <div class="left-column">
-<span style="color: #ff1212">2D Optimization:</span>
-$$
-\begin{aligned}
-\hat{u} \leftarrow \argmin_{u} \mathcal{L} \left(\sum_{p=1}^3  | e^{i\lambda_p u} * h_p |^2, sI_p \right),
-\end{aligned}
-$$
+
 <!-- 2D -->
 <div v-click.hide="1">
 <span style="color: #3cff19">2D Multi-color Optimization:</span>
@@ -125,25 +120,15 @@ $$
 </div>
 <!-- <div v-click="[1,2]"> -->
 <div v-click="1">
-<span style="color: #3cff19" class="abs-br left-56px top-232px">2D Multi-color Optimization:</span>
-<div class="abs-br left--372px top-259px">
+<span style="color: #3cff19" class="abs-br left-56px top-92px">2D Multi-color Optimization:</span>
+<div class="abs-br left--452px top-123px">
 $$
 \begin{aligned}
 \hat{u_t}, \textcolor{3cff19} {\hat{l}_{(p,t)}} \leftarrow \argmin_{u_t, \textcolor{3cff19} {l_{(p,t)}}} \mathcal{L}\left( \sum_{p=1}^3 \textcolor{fbff00}{\sum_{t=1}^3} |\textcolor{3cff19} {l_{(p,t)}} e^{i \lambda_p u_t} * h_p |^2, sI_p \right),
 \end{aligned}
 $$
 </div>
-<div v-click="[1,5]">
-<div class="abs-br left-55px top-339px" style="max-height: 153px; max-width: 550px;">
-Here:
 
-$\textcolor{fbff00}{t}$ denotes the index of a subframe; 
-
-$\textcolor{3cff19} {l_{(p,t)}}$ represents the peak brightness for the $p$-th primary at the $𝑡$-th subframe;
-
-$\lambda_p$ denotes the wavelength of the active primary $p$.
-</div>
-</div>
 </div>
 
 
@@ -187,17 +172,17 @@ $\lambda_p$ denotes the wavelength of the active primary $p$.
 </div>
 </div>
 
-<arrow v-click="4" x1="380" y1="370" x2="355" y2="334" color="#3cff19" width="2" arrowSize="1" /> 
+<arrow v-click="4" x1="340" y1="240" x2="315" y2="204" color="#3cff19" width="2" arrowSize="1" /> 
 
-<div v-click="4"  class="absolute left-360px top-375px text-left" style="max-height: 300px; max-width: 300px; color: #3cff19">
+<div v-click="4"  class="absolute left-360px top-235px text-left" style="max-height: 300px; max-width: 300px; color: #3cff19">
   <div class="relative inline-block">
     initialized by NN
   </div>
 </div>
 
-<div v-click="5"  class="absolute left-80px top-435px text-left" style="max-height: 300px; max-width: 500px; color: #3cff19">
+<div v-click="5"  class="absolute left-80px top-305px text-left" style="max-height: 300px; max-width: 500px; color: #3cff19">
   <div class="relative inline-block">
-    We created the first 3D Multi-color Hologram dataset using LLM, stablediffusion and depth estimation model.
+    3D Multi-color Hologram dataset using LLM, stablediffusion and depth estimation model.
   </div>
 </div>
 
@@ -250,7 +235,7 @@ transition: fade-out
 <div v-click="1">
 <div class="absolute right-40px top-240px text-left" style="max-height: 270px; max-width: 270px;">
   <div class="relative inline-block">
-    The number of steps required for optimization decreased from <span style="color: #ff1212;">> 1000</span> to <span style="color: #3cff19;">70</span> iteration steps without compromising image quality.
+    optimization steps decreased from <span style="color: #ff1212;">> 1000</span> to <span style="color: #3cff19;">70</span> iteration steps without no image quality loss.
   </div>
 </div>
 </div>
@@ -541,79 +526,6 @@ the first stage in blue box the network takes focal surface D and hologram H as 
 
 then in the second stage green box, these  spatially varying kernels V will be used to combine with the spatially invariant kernels, represented in W, to generate the final reconstructions.
 Let me explain what is spatially invariant kernels and what is spatially variant kernels?
--->
-
----
-transition: fade-out
----
-
-# Result (Simulation)
-
-<div class="abs-br right-22px top-90px">
-  <div class="relative inline-block">
-      <img src="/projects/Focal_Stack/compare.png" style="background-color: white; max-height: 900px; max-width: 900px;">
-  </div>
-</div>
-
-<div v-click="1">
-<div class="absolute left-58px top-290px text-left" >
-  <div class="relative inline-block">
-     <span style="font-size:1em">Optimization Speed Comparison</span>
-  </div>
-</div>
-
-<div class="abs-br left-58px top-325px">
-  <div class="relative inline-block">
-      <img src="/projects/Focal_Stack/opt_speed.png" style="background-color: white; max-height: 400px; max-width: 400px;">
-  </div>
-</div>
-
-<div class="absolute left-58px top-470px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px;">
-  <div class="relative inline-block">
-     <span style="color: black; font-size:1em"><b>1.5x. Faster Optimization (<span style="color: red; font-size:1em">ASM 6</span> vs <span style="color: blue; font-size:1em">Ours 6</span>)</b> </span>
-  </div>
-</div>
-</div>
-
-<div v-click="2">
-<div class="absolute right-137px top-290px text-left" >
-  <div class="relative inline-block">
-     <span style="font-size:1em">Reconstruction Speed Comparison</span>
-  </div>
-</div>
-
-<div class="abs-br right-21px top-325px">
-  <div class="relative inline-block">
-      <img src="/projects/Focal_Stack/prop_speed.png" style="background-color: white; max-height: 423px; max-width: 423px;">
-  </div>
-</div>
-<div class="absolute right-49px top-470px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 400px; padding: 2px 5px;">
-  <div class="relative inline-block">
-     <span style="color: black; font-size:1em"><b>10x. Faster Reconstruction (ASM vs Ours)</b> </span>
-  </div>
-</div>
-</div>
-
-<p class="citation" style="font-size: 7px; position: absolute; right: 166px; bottom: -10px; z-index: 10;">
-  (2) "<a rel="noopener noreferrer" href="https://kaanaksit.com/assets/pdf/ZhengEtAl_SigAsia2024_Focal_surface_holographic_light_transport_using_learned_spatially_adaptive_convolutions.pdf" target="_blank">
-  Zheng, C., Zhan, Y., Shi, L., Cakmakci, O., & Akşit, K. Focal Surface Holographic Light Transport using Learned Spatially Adaptive Convolutions.
-  </a>" <i>SIGGRAPH ASIA 2024 Tech Comm</i>
-</p>
-
-<!-- 
-here we show the qualitative results of our solution, 
-we use our method to optimize the hologram, and reconstruct it using ASM.
-This is the result of optimized hologram`s 
-as you can see, compared with the traditional angular spectrum method. 
-Our method remains competitive image quality and providing clear focus and defocus effect at the same time.
-
-Compared with ASM, our method achieves 1.5x faster in optimisation speed 
-and it achieves 10 times faster reconstruction speed compared with ASM as well.
-Also, comparing with the naive method such as U-Net, our method achieves both faster reconstruction speed and higher image quality.
-
-have number in the mind how fast is it in a reasonable GPU
-FGA embedded platform can further accelerate 
-
 -->
 
 
