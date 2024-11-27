@@ -18,6 +18,7 @@ class: text-left
 # https://sli.dev/features/drawing
 drawings:
   persist: false
+colorSchema: dark
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: fade-out
 # enable MDC Syntax: https://sli.dev/features/mdc
@@ -109,7 +110,7 @@ layout: two-cols
 <div class="left-column">
 
 <!-- 2D -->
-<div v-click.hide="1">
+<div v-click.hide="0">
 <span style="color: #3cff19">2D Multi-color Optimization:</span>
 
 $$
@@ -119,7 +120,7 @@ $$
 $$
 </div>
 <!-- <div v-click="[1,2]"> -->
-<div v-click="1">
+<div v-click="0">
 <span style="color: #3cff19" class="abs-br left-56px top-92px">2D Multi-color Optimization:</span>
 <div class="abs-br left--452px top-123px">
 $$
@@ -136,7 +137,7 @@ $$
 
 ::right::
 <!-- Visual Artifact -->
-<div v-click="1">
+<div v-click="0">
 
 <div  class="abs-br right-183px top-48px" style="z-index: 2;">
 <span style="background-color: #ff1212; color: black; padding: 2px 5px;">
@@ -155,7 +156,7 @@ $$
 </div>
 
 <!-- Brighter without Artifacts -->
-<div v-click="1">
+<div v-click="0">
 <div  class="abs-br right-86px top-288px" style="z-index: 2;">
 <span style="background-color: #3cff19; color: black; padding: 2px 5px;">
 <b>Brighter without Artifacts</b>
@@ -172,17 +173,17 @@ $$
 </div>
 </div>
 
-<arrow v-click="2" x1="340" y1="240" x2="315" y2="204" color="#3cff19" width="2" arrowSize="1" /> 
+<arrow v-click="0" x1="340" y1="240" x2="315" y2="204" color="#3cff19" width="2" arrowSize="1" /> 
 
-<div v-click="2"  class="absolute left-360px top-235px text-left" style="max-height: 300px; max-width: 300px; color: #3cff19">
+<div v-click="0"  class="absolute left-360px top-235px text-left" style="max-height: 300px; max-width: 300px; color: #3cff19">
   <div class="relative inline-block">
     initialized by NN
   </div>
 </div>
 
-<div v-click="2"  class="absolute left-80px top-305px text-left" style="max-height: 300px; max-width: 500px; color: #3cff19">
+<div class="absolute right-490px top-340px text-left" style="max-height: 420px; max-width: 420px;">
   <div class="relative inline-block">
-    3D Multi-color Hologram dataset using LLM, stablediffusion and depth estimation model.
+    optimization steps decreased from <span style="color: #ff1212;">> 1000</span> to <span style="color: #3cff19;">70</span> iteration steps without no image quality loss.
   </div>
 </div>
 
@@ -219,32 +220,6 @@ Instead of using randomly initialised laser power as the starting point of optim
 This allows for much faster generation of high-quality, multi-color holograms.
 To train such a network we created the first 3-D multicolour hologram dataet using large language model, stable diffusion and death estimation network.
 -->
-
----
-transition: fade-out
----
-
-# Result:
-
-<div class="abs-br left-58px top-80px">
-  <div class="relative inline-block">
-      <img src="/projects/AutoColor/result.png" style="background-color: white; max-height: 570px; max-width: 570px;">
-  </div>
-</div>
-
-
-<div class="absolute right-40px top-240px text-left" style="max-height: 270px; max-width: 270px;">
-  <div class="relative inline-block">
-    optimization steps decreased from <span style="color: #ff1212;">> 1000</span> to <span style="color: #3cff19;">70</span> iteration steps without no image quality loss.
-  </div>
-</div>
-
-
-<p class="citation" style="font-size: 7px; position: absolute; right: 256px; bottom: -10px; z-index: 10;">
-  (1) "<a rel="noopener noreferrer" href="https://arxiv.org/abs/2305.01611" target="_blank">
-  Zhan, Y., Kavaklı, K., Urey, H., Sun, Q., & Akşit, K. AutoColor: Learned Light Power Control for Multi-Color Holograms.
-  </a>" <i>SPIE AR|VR|MR 2024</i>
-</p>
 
 
 
@@ -414,121 +389,6 @@ we train a neural network that takes focal surface and the hologram as the input
 So in this case, we can achieve simulating light propagation in multiple planes using only 1 step.
 -->
 
-
----
-transition: fade-out
----
-
-# Network Structure (Two-Stage)
-
-<div class="all-figures" v-click="0">
-  
-  <!-- Network Image -->
-  <div class="figure-group" :class="{
-    'transparent': $slidev.nav.clicks >= 1
-  }">
-    <div class="abs-br left-58px top-140px project-container">
-      <div class="relative inline-block">
-        <img src="/projects/Focal_Stack/network.png" style="background-color: white; max-height: 870px; max-width: 870px;">
-      </div> 
-    </div>
-  </div>
-
-  <!-- SV Image -->
-  <div v-click="1" class="figure-group" :class="{
-    'highlighted': $slidev.nav.clicks === 1,
-    'transparent_full': $slidev.nav.clicks === 2
-  }">
-    <div class="abs-br left-272px top-182px project-container"  style="z-index: 10;">
-      <div class="relative inline-block">
-        <img src="/projects/Focal_Stack/SV_gen.png" style="background-color: white; max-height: 130px; max-width: 130px;">
-      </div> 
-    </div>
-  <div class="abs-br left-59px top-263px project-container">
-      <div class="relative inline-block">
-        <img src="/projects/Focal_Stack/SV.png" style="background-color: white; max-height: 370px; max-width: 370px;">
-      </div> 
-    </div>
-    <div class="absolute left-105px bottom-75px text-center project-container" style="background-color: #e5eef6ff; max-height: 300px; max-width: 330px; padding: 2px 5px; z-index: 4;">
-    <div class="relative inline-block">
-      <span style="color: black; font-size:1em"><b>Stage 1: SV kernel Generation</b></span><br>
-    </div>
-    </div>
-  </div>
-
-
-  <!-- SAM Image -->
-  <div v-click="1" class="figure-group" :class="{
-    'highlighted': $slidev.nav.clicks === 1,
-    'transparent_full': $slidev.nav.clicks === 2
-  }">
-  
-  <div class="abs-br right-372px top-184px project-container"  style="z-index: 10;">
-    <div class="relative inline-block">
-      <img src="/projects/Focal_Stack/SAM_small.png" style="background-color: white; max-height: 47px; max-width: 47px;">
-    </div> 
-  </div>
-    <div class="abs-br right-203px top-264px project-container">
-      <div class="relative inline-block">
-        <img src="/projects/Focal_Stack/SAM.png" style="background-color: white; max-height: 349px; max-width: 349px;">
-      </div> 
-    </div>
-    <div class="absolute left-445px bottom-75px text-center project-container" style="background-color: #edf3eaff; max-height: 300px; max-width: 330px; padding: 2px 5px; z-index: 4;">
-    <div class="relative inline-block">
-      <span style="color: black; font-size:1em"><b>Stage 2: Spatially Adaptive Module</b></span><br>
-    </div>
-    </div>
-  </div>
-
-</div>
-
-<style>
-.all-figures {
-  opacity: 1;
-}
-
-.figure-group {
-  opacity: 1;
-  transition: all 0.5s ease;
-}
-
-.figure-group.transparent {
-  opacity: 0.1;
-}
-
-.figure-group.transparent_full {
-  opacity: 0;
-}
-
-.project-container {
-  transition: all 0.5s ease;
-}
-
-.figure-group.highlighted .project-container {
-  transform: scale(1.05);
-}
-</style>
-
-<p class="citation" style="font-size: 7px; position: absolute; right: 166px; bottom: -10px; z-index: 10;">
-  (2) "<a rel="noopener noreferrer" href="https://kaanaksit.com/assets/pdf/ZhengEtAl_SigAsia2024_Focal_surface_holographic_light_transport_using_learned_spatially_adaptive_convolutions.pdf" target="_blank">
-  Zheng, C., Zhan, Y., Shi, L., Cakmakci, O., & Akşit, K. Focal Surface Holographic Light Transport using Learned Spatially Adaptive Convolutions.
-  </a>" <i>SIGGRAPH ASIA 2024 Tech Comm</i>
-</p>
-
-
-
-<!--
-Here is the detail of our network structure, it is a two-stage network.
-
-the first stage in blue box the network takes focal surface D and hologram H as the input to generate a series of spatially varying kernel, represented in V. 
-(highlight blue square)
-
-then in the second stage green box, these  spatially varying kernels V will be used to combine with the spatially invariant kernels, represented in W, to generate the final reconstructions.
-Let me explain what is spatially invariant kernels and what is spatially variant kernels?
--->
-
-
-
 ---
 transition: fade-out
 ---
@@ -629,96 +489,13 @@ focal surface version
 -->
 
 ---
-transition: slide-up
-layout: two-cols
----
-
-# Configurable Learned Holography
-
-<!-- 3D -->
-
-<div class="left-column">
-<span >3D Multi-Color Optimization:</span>
-<div  class="abs-br left--282px top-123px">
-$$
-\begin{aligned}
-\hat{u_t}, \hat{l}_{(p,t)} \leftarrow  \argmin_{u_t, l_{(p,t)}} \mathcal{L} \left(\sum_{ \tiny Z+\dfrac{n△_{z}}{2}}^{ \tiny Z-\dfrac{n△_{z}}{2}} \sum_{p=1}^3 \sum_{t=1}^3  |l_{(p,t)} e^{i\lambda_p u} * h_p (d_x, z, \lambda_p) |^2 , sI_p \right),
-\end{aligned}
-$$
-</div>
-</div>
-<!-- 2D -->
-
-<!-- 3D -->
-<div class="abs-br left-0px top-89px">
-<span class="abs-br left-56px top-7px">3D Multi-Color Optimization:</span>
-<div  class="abs-br left--282px top-34px">
-$$
-\begin{aligned}
-\hat{u_t}, \hat{l}_{(p,t)} \leftarrow  \argmin_{u_t, \textcolor{3cff19}{l_{(p,t)}}} \mathcal{L} \left(\sum_{ \tiny \textcolor{3cff19}{Z}+\dfrac{\textcolor{3cff19}{n△_{z}}}{2}}^{ \tiny \textcolor{3cff19}{Z}-\dfrac{\textcolor{3cff19}{n△_{z}}}{2}} \sum_{p=1}^3 \sum_{t=1}^3  |\textcolor{3cff19}{l_{(p,t)}} e^{i\textcolor{3cff19}{\lambda_p} u} * h_p (\textcolor{3cff19}{d_x, z, \lambda_p}) |^2 , sI_p \right),
-\end{aligned}
-$$
-</div>
-</div>
-
-<div class="abs-br left-55px top-219px">
-Here:
-
-$\textcolor{3cff19}{l_{(p,t)}}$ (Peak Brightness);
-
-$\textcolor{3cff19}{Z}$ (Propagation Distance) and $\textcolor{3cff19}{n△_{z}}$ (Volume Depth);
-
-$\textcolor{3cff19}{d_x}$ (Pixel Pitch);
-
-$\textcolor{3cff19}{\lambda_p}$ (Working Wavelength);
-
-become part of the input to the learned method.
-</div>
-
-
-::right::
-
-
-<div class="abs-br right-40px top-255px" style="z-index: 1;">
-<div class="abs-br right-200px top-95px">
-<span style="color: #ff1212">→</span>
-</div>
-  <div class="relative inline-block">
-      <img src="/projects/Configurable_holo/Configurable_Holo.png" style="max-height: 390px; max-width: 390px;">
-  </div>
-</div>
-
-
-<p class="citation" style="font-size: 7px; position: absolute; right: 316px; bottom: -10px; z-index: 10;">
-  (3) "<a rel="noopener noreferrer" href="https://arxiv.org/abs/2405.01558" target="_blank">
-  Zhan, Y., Shi, L., Matusik, W., Sun, Q., & Akşit, K. Configurable Learned Holography.
-  </a>" <i>arXiv e-prints</i>
-</p>
-
-<style>
-.left-column {
-  width: 70%;
-  padding-right: 1rem;
-}
-.slidev-layout {
-  display: flex;
-}
-</style>
-
-<!--
-In this project we aim to create a flexible system for generating holograms that can adapt to various optical configuration without retraining 
-here we are solving a 3-D multicolour hologram optimisation as you can see. 
-The equation is literally just a combination of 3-D and multicolour optimisation. 
-Traditionally all of these display and physical parameters such as distance Z, wavelength λcolour primary p， pixel size dx， all of the things they are pre-determined 
-and once the model is trained, the model can only work under these variables only
-
-so I was thinking why we don’t include these variables as part of the input of the model as well.
-and thats what we did in this project
--->
-
----
 transition: fade-out
 ---
+
+<div class="absolute left-90px top-15px text-left" >
+<span style="font-size:2em">Configurable Learned Holography</span>
+</div>
+
 
 <div class="absolute left-90px top-65px inset-0 bg-white" style="z-index: 0; max-height: 400px; max-width: 800px;">
   <!-- White background container -->
@@ -788,7 +565,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "2">
+<div v-click = "1">
 <div class="abs-br left-83px top-191px" style="z-index: 2;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block">
@@ -799,7 +576,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[2, 3]">
+<div v-click = "1">
 <div class="abs-br left-200px top-175px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -810,7 +587,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[2, 3]">
+<div v-click = "1">
 <div class="abs-br left-200px top-250px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -821,7 +598,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[2, 3]">
+<div v-click = "1">
 <div class="abs-br left-200px top-325px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -831,7 +608,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "3">
+<div v-click = "1">
 <div class="absolute left-360px top-435px text-left" style="background-color: #ff1212; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>One model per configuration </b> </span>
@@ -840,7 +617,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "3">
+<div v-click = "1">
 <div class="absolute left-90px top-375px text-left" style="background-color: #ff1212; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>< 10 FPS @ full HD</b> </span>
@@ -848,7 +625,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "3">
+<div v-click = "1">
 <div class="absolute left-90px top-415px text-left" style="background-color: #ff1212; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>Requires Depth as input</b> </span>
@@ -873,7 +650,9 @@ They’re slow and then they require that depth as the input.
 
 ---
 transition: fade-out
+
 ---
+
 
 <div class="absolute left-90px top-65px inset-0 bg-white" style="z-index: 0; max-height: 400px; max-width: 800px;">
   <!-- White background container -->
@@ -886,7 +665,7 @@ transition: fade-out
 </div>
 
 
-<div v-click.hide = "1">
+<div v-click.hide = "0">
 <span class="absolute left-390px top-160px " style="color: black; z-index: 2;">→</span>
 <div class="absolute left-420px top-130px text-center" style="background-color: rgb(0, 0, 0, 0.25); max-height: 300px; max-width: 120px; z-index: 2;">
   <div class="relative inline-block">
@@ -906,7 +685,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[0,1]">
+<div v-click = "0">
 <div class="abs-br left-166px top-118px" style="z-index: 1;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block" >
@@ -916,7 +695,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "1">
+<div v-click = "0">
 <div class="abs-br left--30px top-105px" style="z-index: 1;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block">
@@ -926,7 +705,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "1">
+<div v-click = "0">
 
 <div class="absolute left-510px top-65px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
@@ -945,7 +724,7 @@ transition: fade-out
 
 
 
-<div v-click = "[1, 2]">
+<div v-click = "0">
 <div class="abs-br left-200px top-180px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -956,7 +735,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[1, 2]">
+<div v-click = "0">
 <div class="abs-br left-200px top-265px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -967,7 +746,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[1, 2]">
+<div v-click = "0">
 <div class="abs-br left-200px top-333px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -977,7 +756,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "2">
+<div v-click = "0">
 <div class="absolute left-360px top-435px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>Multiple optical configurations </b> </span>
@@ -985,15 +764,15 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "2">
+<div v-click = "0">
 <div class="absolute left-90px top-375px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
-     <span style="color: black; font-size:1em"><b>25 FPS @ full HD</b> </span>
+     <span style="color: black; font-size:1em"><b>25 FPS @ full HD (fp32)</b> </span>
   </div>
 </div>
 </div>
 
-<div v-click = "2">
+<div v-click = "0">
 <div class="absolute left-90px top-415px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>RGB-only image as input</b> </span>
