@@ -136,7 +136,7 @@ $$
 
 ::right::
 <!-- Visual Artifact -->
-<div v-click="2">
+<div v-click="1">
 
 <div  class="abs-br right-183px top-48px" style="z-index: 2;">
 <span style="background-color: #ff1212; color: black; padding: 2px 5px;">
@@ -155,7 +155,7 @@ $$
 </div>
 
 <!-- Brighter without Artifacts -->
-<div v-click="3">
+<div v-click="1">
 <div  class="abs-br right-86px top-288px" style="z-index: 2;">
 <span style="background-color: #3cff19; color: black; padding: 2px 5px;">
 <b>Brighter without Artifacts</b>
@@ -172,15 +172,15 @@ $$
 </div>
 </div>
 
-<arrow v-click="4" x1="340" y1="240" x2="315" y2="204" color="#3cff19" width="2" arrowSize="1" /> 
+<arrow v-click="2" x1="340" y1="240" x2="315" y2="204" color="#3cff19" width="2" arrowSize="1" /> 
 
-<div v-click="4"  class="absolute left-360px top-235px text-left" style="max-height: 300px; max-width: 300px; color: #3cff19">
+<div v-click="2"  class="absolute left-360px top-235px text-left" style="max-height: 300px; max-width: 300px; color: #3cff19">
   <div class="relative inline-block">
     initialized by NN
   </div>
 </div>
 
-<div v-click="5"  class="absolute left-80px top-305px text-left" style="max-height: 300px; max-width: 500px; color: #3cff19">
+<div v-click="2"  class="absolute left-80px top-305px text-left" style="max-height: 300px; max-width: 500px; color: #3cff19">
   <div class="relative inline-block">
     3D Multi-color Hologram dataset using LLM, stablediffusion and depth estimation model.
   </div>
@@ -232,12 +232,11 @@ transition: fade-out
   </div>
 </div>
 
-<div v-click="1">
+
 <div class="absolute right-40px top-240px text-left" style="max-height: 270px; max-width: 270px;">
   <div class="relative inline-block">
     optimization steps decreased from <span style="color: #ff1212;">> 1000</span> to <span style="color: #3cff19;">70</span> iteration steps without no image quality loss.
   </div>
-</div>
 </div>
 
 
@@ -265,44 +264,44 @@ Conventional Light Transport
 </div>
 
 
-<arrow v-click="1" style="z-index: 2;" x1="250" y1="260" x2="300" y2="260" width="1" arrowSize="1" />
+<arrow  style="z-index: 2;" x1="250" y1="260" x2="300" y2="260" width="1" arrowSize="1" />
 
-<div v-click="1" class="abs-br left-320px top-175px">
+<div  class="abs-br left-320px top-175px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/focal_stack_side.png" style="max-height: 200px; max-width: 200px;">
   </div>
 </div>
 
-<div v-click="5" class="abs-br right-366px top-129px" style="z-index: 2;">
+<div class="abs-br right-366px top-129px" style="z-index: 2;">
 <span style="background-color: #ff1212; color: black; padding: 2px 5px;">
 <b>Individual Propagation Per Plane</b>
 </span>
 </div>
 
-<div v-click="2" class="abs-br left-320px top-195px">
+<div class="abs-br left-320px top-195px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/arrow_n_steps.png" style="max-height: 220px; max-width: 220px;">
   </div>
 </div>
 
-<div v-click="2" class="abs-br left-280px top-355px">
+<div class="abs-br left-280px top-355px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/hologram_side.png" style="max-height: 100px; max-width: 100px;">
   </div>
 </div>
 
-<arrow v-click="3" style="z-index: 2;" x1="510" y1="260" x2="560" y2="260" width="1" arrowSize="1" />
+<arrow style="z-index: 2;" x1="510" y1="260" x2="560" y2="260" width="1" arrowSize="1" />
 
-<div v-click="3" class="abs-br right-250px top-175px">
+<div class="abs-br right-250px top-175px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/depth_plane_side.png" style="max-height: 200px; max-width: 200px;">
   </div>
   <div class="abs-br left--10px top-215px">Reconstruction</div>
 </div>
 
-<arrow v-click="4" style="z-index: 2;" x1="750" y1="260" x2="800" y2="260" width="1" arrowSize="1" />
+<arrow  style="z-index: 2;" x1="750" y1="260" x2="800" y2="260" width="1" arrowSize="1" />
 
-<div v-click="4" class="abs-br right-70px top-195px">
+<div  class="abs-br right-70px top-195px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/hardware.png" style="max-height: 180px; max-width: 180px;">
   </div>
@@ -352,45 +351,45 @@ Focal Surface Light Transport
 </div>
 
 
-<arrow v-click="1" style="z-index: 2;" x1="210" y1="260" x2="260" y2="260" width="1" arrowSize="1" />
+<arrow  style="z-index: 2;" x1="210" y1="260" x2="260" y2="260" width="1" arrowSize="1" />
 
-<div v-click="1" class="abs-br left-270px top-175px">
+<div class="abs-br left-270px top-175px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/focal_stack_3D_side_grey.png" style="max-height: 170px; max-width: 170px;">
   </div>
    <div class="abs-br left-10px top-215px">Focal Surface</div>
 </div>
 
-<arrow v-click="2" style="z-index: 2;" x1="440" y1="260" x2="490" y2="260" width="1" arrowSize="1" />
+<arrow  style="z-index: 2;" x1="440" y1="260" x2="490" y2="260" width="1" arrowSize="1" />
 
-<div v-click="2" class="abs-br right-300px top-195px">
+<div  class="abs-br right-300px top-195px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/focal_stack_3D_side.png" style="max-height: 170px; max-width: 170px;">
   </div>
 </div>
 
-<div v-click="2" class="abs-br right-410px top-295px">
+<div  class="abs-br right-410px top-295px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/curve_arrow.png" style="max-height: 70px; max-width: 70px;">
   </div>
 </div>
 
-<div v-click="2" class="abs-br right-400px top-345px">
+<div class="abs-br right-400px top-345px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/hologram_side.png" style="max-height: 100px; max-width: 100px;">
   </div>
 </div>
 
 
-<div v-click="4" class="abs-br right-326px top-129px" style="z-index: 2;">
+<div class="abs-br right-326px top-129px" style="z-index: 2;">
 <span style="background-color: #3cff19; color: black; padding: 2px 5px;">
 <b>Multi-planes Propagation In One Step</b>
 </span>
 </div>
 
-<arrow v-click="3" style="z-index: 2;" x1="680" y1="260" x2="730" y2="260" width="1" arrowSize="1" />
+<arrow style="z-index: 2;" x1="680" y1="260" x2="730" y2="260" width="1" arrowSize="1" />
 
-<div v-click="3" class="abs-br right-80px top-175px">
+<div  class="abs-br right-80px top-175px">
   <div class="relative inline-block">
       <img src="/projects/Focal_Stack/depth_plane_side.png" style="max-height: 200px; max-width: 200px;">
   </div>
@@ -459,9 +458,9 @@ transition: fade-out
 
 
   <!-- SAM Image -->
-  <div v-click="2" class="figure-group" :class="{
-    'highlighted': $slidev.nav.clicks === 2,
-    'transparent_full': $slidev.nav.clicks === 1
+  <div v-click="1" class="figure-group" :class="{
+    'highlighted': $slidev.nav.clicks === 1,
+    'transparent_full': $slidev.nav.clicks === 2
   }">
   
   <div class="abs-br right-372px top-184px project-container"  style="z-index: 10;">
@@ -563,7 +562,7 @@ const playbackRate = ref(0.7)
 
 
 
-<div v-click="1" class="absolute left-85px bottom-25px" style="width: 80%; z-index: 10;">
+<div  class="absolute left-85px bottom-25px" style="width: 80%; z-index: 10;">
   <div class="flex justify-between text-xs mb-1">
     <span>Slow (0.5x)</span>
     <span>Normal (1x)</span>
@@ -628,107 +627,6 @@ while achieving this series of propagations in one single forward pass.
 new slide after, which contains new rendering result
 focal surface version
 -->
-
----
-transition: fade-out
----
-
-# Result (Simulation)
-
-<script setup>
-import { ref } from 'vue'
-
-const playbackRate = ref(0.7)
-</script>
-
-
-<div class="absolute right-15px top-125px text-center">
-  <div style="max-height: 950px; max-width: 950px;">
-    <SlidevVideo  autoplay autoreset :playbackRate="playbackRate" loop>
-      <source src="/projects/Focal_Stack/focal_surface_result.mov" type="video/mp4" />
-    </SlidevVideo>
-  </div>
-</div>
-<div class="absolute right-465px top-85px text-center" style="background-color: #3cff19; max-height: 300px; max-width: 330px; padding: 2px 5px; z-index: 4;">
-  <div class="relative inline-block">
-    <span style="color: black; font-size:1.2em"><b>Ours</b></span><br>
-  </div>
-</div>
-  <div class="absolute right-135px top-85px text-center" style="background-color: #ff1212; max-height: 300px; max-width: 330px; padding: 2px 5px; z-index: 4;">
-  <div class="relative inline-block">
-    <span style="color: black; font-size:1.2em"><b>ASM</b></span><br>
-  </div>
-</div>
-
-
-
-<div v-click="1" class="absolute left-85px bottom-25px" style="width: 80%; z-index: 10;">
-  <div class="flex justify-between text-xs mb-1">
-    <span>Slow (0.5x)</span>
-    <span>Normal (1x)</span>
-    <span>Fast (2x)</span>
-  </div>
-  <input 
-    type="range" 
-    v-model="playbackRate" 
-    min="0.5" 
-    max="2" 
-    step="0.01" 
-    class="slider"
-    style="width: 100%;"
-  >
-</div>
-
-
-<style>
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 10px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #3cff19;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #3cff19;
-  cursor: pointer;
-}
-</style>
-
-<p class="citation" style="font-size: 7px; position: absolute; right: 166px; bottom: -10px; z-index: 10;">
-  (2) "<a rel="noopener noreferrer" href="https://kaanaksit.com/assets/pdf/ZhengEtAl_SigAsia2024_Focal_surface_holographic_light_transport_using_learned_spatially_adaptive_convolutions.pdf" target="_blank">
-  Zheng, C., Zhan, Y., Shi, L., Cakmakci, O., & Akşit, K. Focal Surface Holographic Light Transport using Learned Spatially Adaptive Convolutions.
-  </a>" <i>SIGGRAPH ASIA 2024 Tech Comm</i>
-</p>
-
-
-<!--
-Here, we present a close-up reconstruction comparison 
-between our method and the ASM method under varying depth planes. 
-Notably, our approach closely replicates the defocus and focus effects similar to the ASM method,  
-while achieving this series of propagations in one single forward pass.
-
-new slide after, which contains new rendering result
-focal surface version
--->
-
 
 ---
 transition: slide-up
@@ -740,7 +638,6 @@ layout: two-cols
 <!-- 3D -->
 
 <div class="left-column">
-<div v-click.hide="1">
 <span >3D Multi-Color Optimization:</span>
 <div  class="abs-br left--282px top-123px">
 $$
@@ -750,11 +647,9 @@ $$
 $$
 </div>
 </div>
-</div>
 <!-- 2D -->
 
 <!-- 3D -->
-<div v-click="1">
 <div class="abs-br left-0px top-89px">
 <span class="abs-br left-56px top-7px">3D Multi-Color Optimization:</span>
 <div  class="abs-br left--282px top-34px">
@@ -780,10 +675,9 @@ $\textcolor{3cff19}{\lambda_p}$ (Working Wavelength);
 become part of the input to the learned method.
 </div>
 
-</div>
 
 ::right::
-<div v-click="2">
+
 
 <div class="abs-br right-40px top-255px" style="z-index: 1;">
 <div class="abs-br right-200px top-95px">
@@ -793,7 +687,7 @@ become part of the input to the learned method.
       <img src="/projects/Configurable_holo/Configurable_Holo.png" style="max-height: 390px; max-width: 390px;">
   </div>
 </div>
-</div>
+
 
 <p class="citation" style="font-size: 7px; position: absolute; right: 316px; bottom: -10px; z-index: 10;">
   (3) "<a rel="noopener noreferrer" href="https://arxiv.org/abs/2405.01558" target="_blank">
@@ -867,7 +761,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "1">
+<div v-click = "0">
 <div class="abs-br left--30px top-105px" style="z-index: 1;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block">
@@ -877,7 +771,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "3">
+<div v-click = "1">
 
 <div class="absolute left-510px top-65px text-left" style="background-color: #ff1212; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
@@ -894,7 +788,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "4">
+<div v-click = "2">
 <div class="abs-br left-83px top-191px" style="z-index: 2;">
 <div class="abs-br left-150px top-5px">
   <div class="relative inline-block">
@@ -905,7 +799,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[2, 5]">
+<div v-click = "[2, 3]">
 <div class="abs-br left-200px top-175px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -916,7 +810,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[5, 6]">
+<div v-click = "[2, 3]">
 <div class="abs-br left-200px top-250px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -927,7 +821,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[6, 7]">
+<div v-click = "[2, 3]">
 <div class="abs-br left-200px top-325px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -937,7 +831,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "7">
+<div v-click = "3">
 <div class="absolute left-360px top-435px text-left" style="background-color: #ff1212; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>One model per configuration </b> </span>
@@ -946,7 +840,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "8">
+<div v-click = "3">
 <div class="absolute left-90px top-375px text-left" style="background-color: #ff1212; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>< 10 FPS @ full HD</b> </span>
@@ -954,7 +848,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "9">
+<div v-click = "3">
 <div class="absolute left-90px top-415px text-left" style="background-color: #ff1212; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>Requires Depth as input</b> </span>
@@ -1032,7 +926,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "2">
+<div v-click = "1">
 
 <div class="absolute left-510px top-65px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
@@ -1051,7 +945,7 @@ transition: fade-out
 
 
 
-<div v-click = "[3, 4]">
+<div v-click = "[1, 2]">
 <div class="abs-br left-200px top-180px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -1062,7 +956,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[4, 5]">
+<div v-click = "[1, 2]">
 <div class="abs-br left-200px top-265px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -1073,7 +967,7 @@ transition: fade-out
 </div>
 
 
-<div v-click = "[5, 6]">
+<div v-click = "[1, 2]">
 <div class="abs-br left-200px top-333px" style="z-index: 3;">
 <div class="abs-br left-200px top-5px">
   <div class="relative inline-block">
@@ -1083,7 +977,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "6">
+<div v-click = "2">
 <div class="absolute left-360px top-435px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>Multiple optical configurations </b> </span>
@@ -1091,7 +985,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "7">
+<div v-click = "2">
 <div class="absolute left-90px top-375px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>25 FPS @ full HD</b> </span>
@@ -1099,7 +993,7 @@ transition: fade-out
 </div>
 </div>
 
-<div v-click = "8">
+<div v-click = "2">
 <div class="absolute left-90px top-415px text-left" style="background-color: #3cff19; max-height: 300px; max-width: 500px; padding: 2px 5px; z-index: 2;">
   <div class="relative inline-block">
      <span style="color: black; font-size:1em"><b>RGB-only image as input</b> </span>
@@ -1131,9 +1025,9 @@ import { ref } from 'vue'
 const playbackRate = ref(0.7)
 </script>
 
-<div v-click="1">
+<div v-click="0">
   <div style="max-height: 320px; max-width: 320px;">
-    <SlidevVideo v-click="1" autoplay autoreset :playbackRate="playbackRate" loop>
+    <SlidevVideo v-click="0" autoplay autoreset :playbackRate="playbackRate" loop>
       <source src="/projects/Configurable_holo/test.mp4" type="video/mp4" />
     </SlidevVideo>
   </div>
@@ -1145,10 +1039,10 @@ const playbackRate = ref(0.7)
   </div>
 </div>
 
-<div v-click="2">
+<div v-click="0">
   <div class="absolute right-105px top-95px text-center">
     <div style="max-height: 320px; max-width: 320px;">
-      <SlidevVideo v-click="2" autoplay autoreset :playbackRate="playbackRate" loop>
+      <SlidevVideo v-click="0" autoplay autoreset :playbackRate="playbackRate" loop>
         <source src="/projects/Configurable_holo/test2.mp4" type="video/mp4" />
       </SlidevVideo>
     </div>
@@ -1160,7 +1054,7 @@ const playbackRate = ref(0.7)
   </div>
 </div>
 
-<div v-click="3">
+<div v-click="0">
   <div class="absolute right-468px top-250px text-center" style="background-color: #3cff19; max-height: 300px; max-width: 330px; padding: 2px 5px; z-index: 4;">
     <div class="relative inline-block">
       <span style="color: black; font-size:0.8em"><b>REAL TIME!</b></span><br>
@@ -1168,7 +1062,7 @@ const playbackRate = ref(0.7)
   </div>
 </div>
 
-<div v-click="4" class="absolute left-85px bottom-25px" style="width: 80%; z-index: 10;">
+<div v-click="0" class="absolute left-85px bottom-25px" style="width: 80%; z-index: 10;">
   <div class="flex justify-between text-xs mb-1">
     <span>Slow (0.5x)</span>
     <span>Normal (1x)</span>
